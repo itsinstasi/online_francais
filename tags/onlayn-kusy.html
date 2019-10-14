@@ -28,6 +28,9 @@
     <meta name="msapplication-TileImage" content="../img/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#fff">
 
+	<!--modernizr-->
+	<script src="../js/vendors/modernizr-custom.js"></script>
+
 </head>
 <body>
     <!--[if lt IE 8]>
@@ -59,249 +62,255 @@
 			</div>
 		</header>	
 		<div class="main">
-			<div class="stories" style="display: none;">
+			<div class="stories">
 				<div class="container">
-					<div class="stories__slider" id="js-stories-slider">
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="французский язык">
-								<a href="./frantsuzskiy-yazyk.html">
-									<div class="stories__slide-pic"><img src="../img/og/frantsuzskiy-yazyk.png" alt="французский язык" /></div>
-									<div class="stories__slide-txt">французский язык</div>
-								</a>
+					<div class="stories__slider-wrap">
+						<div class="stories__slider" id="js-stories-slider">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="stories__slide" title="французский язык">
+										<a href="./frantsuzskiy-yazyk.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/frantsuzskiy-yazyk.png);"></div>
+											<div class="stories__slide-txt">французский язык</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="французский для начинающих">
+										<a href="./frantsuzskiy-dlya-nachinayushchikh.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/frantsuzskiy-dlya-nachinayushchikh.png);"></div>
+											<div class="stories__slide-txt">французский для начинающих</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="французский">
+										<a href="./frantsuzskiy.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/frantsuzskiy.png);"></div>
+											<div class="stories__slide-txt">французский</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="французский для всех">
+										<a href="./frantsuzskiy-dlya-vsekh.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/frantsuzskiy-dlya-vsekh.png);"></div>
+											<div class="stories__slide-txt">французский для всех</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="французский с нуля">
+										<a href="./frantsuzskiy-s-nulya.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/frantsuzskiy-s-nulya.png);"></div>
+											<div class="stories__slide-txt">французский с нуля</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="французский онлайн">
+										<a href="./frantsuzskiy-onlayn.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/frantsuzskiy-onlayn.png);"></div>
+											<div class="stories__slide-txt">французский онлайн</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="онлайн курсы">
+										<a href="./onlayn-kursy.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/onlayn-kursy.png);"></div>
+											<div class="stories__slide-txt">онлайн курсы</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="онлайн обучение">
+										<a href="./onlayn-obuchenie.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/onlayn-obuchenie.png);"></div>
+											<div class="stories__slide-txt">онлайн обучение</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="иностранные языки">
+										<a href="./inostrannye-yazyki.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/inostrannye-yazyki.png);"></div>
+											<div class="stories__slide-txt">иностранные языки</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="french">
+										<a href="./french.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/french.png);"></div>
+											<div class="stories__slide-txt">french</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="скайп уроки">
+										<a href="./skayp-uroki.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/skayp-uroki.png);"></div>
+											<div class="stories__slide-txt">скайп уроки</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="уроки французского">
+										<a href="./uroki-frantsuzskogo.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/uroki-frantsuzskogo.png);"></div>
+											<div class="stories__slide-txt">уроки французского</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="репетитор французского">
+										<a href="./repetitor-frantsuzskogo.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/repetitor-frantsuzskogo.png);"></div>
+											<div class="stories__slide-txt">репетитор французского</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="саморазвитие">
+										<a href="./samorazvitie.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/samorazvitie.png);"></div>
+											<div class="stories__slide-txt">саморазвитие</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="изучать французский">
+										<a href="./izuchat--frantsuzskiy.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/izuchat--frantsuzskiy.png);"></div>
+											<div class="stories__slide-txt">изучать французский</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="языковые курсы">
+										<a href="./yazykovye-kursy.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/yazykovye-kursy.png);"></div>
+											<div class="stories__slide-txt">языковые курсы</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="онлайн школа">
+										<a href="./onlayn-shkola.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/onlayn-shkola.png);"></div>
+											<div class="stories__slide-txt">онлайн школа</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="français">
+										<a href="./français.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/français.png);"></div>
+											<div class="stories__slide-txt">français</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="курсы французского">
+										<a href="./kursy-frantsuzskogo.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/kursy-frantsuzskogo.png);"></div>
+											<div class="stories__slide-txt">курсы французского</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="языковая школа">
+										<a href="./yazykovaya-shkola.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/yazykovaya-shkola.png);"></div>
+											<div class="stories__slide-txt">языковая школа</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="преподаватель французского">
+										<a href="./prepodavatel--frantsuzskogo.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/prepodavatel--frantsuzskogo.png);"></div>
+											<div class="stories__slide-txt">преподаватель французского</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="francais">
+										<a href="./francais.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/francais.png);"></div>
+											<div class="stories__slide-txt">francais</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="изучаем французский">
+										<a href="./izuchaem-frantsuzskiy.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/izuchaem-frantsuzskiy.png);"></div>
+											<div class="stories__slide-txt">изучаем французский</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="френч">
+										<a href="./french.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/french.png);"></div>
+											<div class="stories__slide-txt">френч</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="онлайн французский">
+										<a href="./onlayn-frantsuzskiy.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/onlayn-frantsuzskiy.png);"></div>
+											<div class="stories__slide-txt">онлайн французский</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="грамматика">
+										<a href="./grammatika.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/grammatika.png);"></div>
+											<div class="stories__slide-txt">грамматика</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="онлайн уроки">
+										<a href="./onlayn-uroki.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/onlayn-uroki.png);"></div>
+											<div class="stories__slide-txt">онлайн уроки</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="французский по скайпу">
+										<a href="./frantsuzskiy-po-skaypu.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/frantsuzskiy-po-skaypu.png);"></div>
+											<div class="stories__slide-txt">французский по скайпу</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="уроки онлайн">
+										<a href="./uroki-onlayn.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/uroki-onlayn.png);"></div>
+											<div class="stories__slide-txt">уроки онлайн</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="репетитор онлайн">
+										<a href="./repetitor-onlayn.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/repetitor-onlayn.png);"></div>
+											<div class="stories__slide-txt">репетитор онлайн</div>
+										</a>
+									</div>
+								</div>
 							</div>
 						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="французский для начинающих">
-								<a href="./frantsuzskiy-dlya-nachinayushchikh.html">
-									<div class="stories__slide-pic"><img src="../img/og/frantsuzskiy-dlya-nachinayushchikh.png" alt="французский для начинающих" /></div>
-									<div class="stories__slide-txt">французский для начинающих</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="французский">
-								<a href="./frantsuzskiy.html">
-									<div class="stories__slide-pic"><img src="../img/og/frantsuzskiy.png" alt="французский" /></div>
-									<div class="stories__slide-txt">французский</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="французский для всех">
-								<a href="./frantsuzskiy-dlya-vsekh.html">
-									<div class="stories__slide-pic"><img src="../img/og/frantsuzskiy-dlya-vsekh.png" alt="французский для всех" /></div>
-									<div class="stories__slide-txt">французский для всех</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="французский с нуля">
-								<a href="./frantsuzskiy-s-nulya.html">
-									<div class="stories__slide-pic"><img src="../img/og/frantsuzskiy-s-nulya.png" alt="французский с нуля" /></div>
-									<div class="stories__slide-txt">французский с нуля</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="французский онлайн">
-								<a href="./frantsuzskiy-onlayn.html">
-									<div class="stories__slide-pic"><img src="../img/og/frantsuzskiy-onlayn.png" alt="французский онлайн" /></div>
-									<div class="stories__slide-txt">французский онлайн</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="онлайн курсы">
-								<a href="./onlayn-kursy.html">
-									<div class="stories__slide-pic"><img src="../img/og/onlayn-kursy.png" alt="онлайн курсы" /></div>
-									<div class="stories__slide-txt">онлайн курсы</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="онлайн обучение">
-								<a href="./onlayn-obuchenie.html">
-									<div class="stories__slide-pic"><img src="../img/og/onlayn-obuchenie.png" alt="онлайн обучение" /></div>
-									<div class="stories__slide-txt">онлайн обучение</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="иностранные языки">
-								<a href="./inostrannye-yazyki.html">
-									<div class="stories__slide-pic"><img src="../img/og/inostrannye-yazyki.png" alt="иностранные языки" /></div>
-									<div class="stories__slide-txt">иностранные языки</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="french">
-								<a href="./french.html">
-									<div class="stories__slide-pic"><img src="../img/og/french.png" alt="french" /></div>
-									<div class="stories__slide-txt">french</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="скайп уроки">
-								<a href="./skayp-uroki.html">
-									<div class="stories__slide-pic"><img src="../img/og/skayp-uroki.png" alt="скайп уроки" /></div>
-									<div class="stories__slide-txt">скайп уроки</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="уроки французского">
-								<a href="./uroki-frantsuzskogo.html">
-									<div class="stories__slide-pic"><img src="../img/og/uroki-frantsuzskogo.png" alt="уроки французского" /></div>
-									<div class="stories__slide-txt">уроки французского</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="репетитор французского">
-								<a href="./repetitor-frantsuzskogo.html">
-									<div class="stories__slide-pic"><img src="../img/og/repetitor-frantsuzskogo.png" alt="репетитор французского" /></div>
-									<div class="stories__slide-txt">репетитор французского</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="саморазвитие">
-								<a href="./samorazvitie.html">
-									<div class="stories__slide-pic"><img src="../img/og/samorazvitie.png" alt="саморазвитие" /></div>
-									<div class="stories__slide-txt">саморазвитие</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="изучать французский">
-								<a href="./izuchat--frantsuzskiy.html">
-									<div class="stories__slide-pic"><img src="../img/og/izuchat--frantsuzskiy.png" alt="изучать французский" /></div>
-									<div class="stories__slide-txt">изучать французский</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="языковые курсы">
-								<a href="./yazykovye-kursy.html">
-									<div class="stories__slide-pic"><img src="../img/og/yazykovye-kursy.png" alt="языковые курсы" /></div>
-									<div class="stories__slide-txt">языковые курсы</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="онлайн школа">
-								<a href="./onlayn-shkola.html">
-									<div class="stories__slide-pic"><img src="../img/og/onlayn-shkola.png" alt="онлайн школа" /></div>
-									<div class="stories__slide-txt">онлайн школа</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="français">
-								<a href="./français.html">
-									<div class="stories__slide-pic"><img src="../img/og/français.png" alt="français" /></div>
-									<div class="stories__slide-txt">français</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="курсы французского">
-								<a href="./kursy-frantsuzskogo.html">
-									<div class="stories__slide-pic"><img src="../img/og/kursy-frantsuzskogo.png" alt="курсы французского" /></div>
-									<div class="stories__slide-txt">курсы французского</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="языковая школа">
-								<a href="./yazykovaya-shkola.html">
-									<div class="stories__slide-pic"><img src="../img/og/yazykovaya-shkola.png" alt="языковая школа" /></div>
-									<div class="stories__slide-txt">языковая школа</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="преподаватель французского">
-								<a href="./prepodavatel--frantsuzskogo.html">
-									<div class="stories__slide-pic"><img src="../img/og/prepodavatel--frantsuzskogo.png" alt="преподаватель французского" /></div>
-									<div class="stories__slide-txt">преподаватель французского</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="francais">
-								<a href="./francais.html">
-									<div class="stories__slide-pic"><img src="../img/og/francais.png" alt="francais" /></div>
-									<div class="stories__slide-txt">francais</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="изучаем французский">
-								<a href="./izuchaem-frantsuzskiy.html">
-									<div class="stories__slide-pic"><img src="../img/og/izuchaem-frantsuzskiy.png" alt="изучаем французский" /></div>
-									<div class="stories__slide-txt">изучаем французский</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="френч">
-								<a href="./french.html">
-									<div class="stories__slide-pic"><img src="../img/og/french.png" alt="френч" /></div>
-									<div class="stories__slide-txt">френч</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="онлайн французский">
-								<a href="./onlayn-frantsuzskiy.html">
-									<div class="stories__slide-pic"><img src="../img/og/onlayn-frantsuzskiy.png" alt="онлайн французский" /></div>
-									<div class="stories__slide-txt">онлайн французский</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="онлайн уроки">
-								<a href="./onlayn-uroki.html">
-									<div class="stories__slide-pic"><img src="../img/og/onlayn-uroki.png" alt="онлайн уроки" /></div>
-									<div class="stories__slide-txt">онлайн уроки</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="грамматика">
-								<a href="./grammatika.html">
-									<div class="stories__slide-pic"><img src="../img/og/grammatika.png" alt="грамматика" /></div>
-									<div class="stories__slide-txt">грамматика</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="французский по скайпу">
-								<a href="./frantsuzskiy-po-skaypu.html">
-									<div class="stories__slide-pic"><img src="../img/og/frantsuzskiy-po-skaypu.png" alt="французский по скайпу" /></div>
-									<div class="stories__slide-txt">французский по скайпу</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="уроки онлайн">
-								<a href="./uroki-onlayn.html">
-									<div class="stories__slide-pic"><img src="../img/og/uroki-onlayn.png" alt="уроки онлайн" /></div>
-									<div class="stories__slide-txt">уроки онлайн</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="репетитор онлайн">
-								<a href="./repetitor-onlayn.html">
-									<div class="stories__slide-pic"><img src="../img/og/repetitor-onlayn.png" alt="репетитор онлайн" /></div>
-									<div class="stories__slide-txt">репетитор онлайн</div>
-								</a>
-							</div>
-						</div>
+						<div class="stories__arrow stories__arrow--prev" id="js-stories-prev"></div>
+						<div class="stories__arrow stories__arrow--next" id="js-stories-next"></div>
 					</div>
 				</div>
 			</div>
@@ -316,7 +325,7 @@
 						<h1 class="tag__title">онлайн кусы</h1>
 						<div class="tag__item-list">
 							<a href="../posts/./bonjour-á-tous.html" class="tag__item">
-								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/bff5dcf0a51cfbc8e79bb7af2bf72d3f/5DA63954/t51.2885-15/e15/53246945_329536637905162_5845305689526224584_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=110" alt=""></div>
+								<div class="tag__item-img"><img src="https://scontent-arn2-2.cdninstagram.com/vp/4c5dc31ee28f885de9483b909494ebaf/5DA6E214/t51.2885-15/e15/53246945_329536637905162_5845305689526224584_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=110" alt=""></div>
 								<div class="tag__item-desc">
 									<div class="tag__item-datas">
 										<div class="tag__item-datas-item"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="2019-03-08">08 March 2019</time></div>
@@ -369,11 +378,12 @@
 			</div>
 		</div>			
 	</div>
+	<!--swiper-->
+	<script src="../js/vendors/swiper.min.js"></script>
 	<!--jQuery-->
 	<script src="../js/vendors/jquery.min.js"></script>
-	<script src="../js/vendors/jquery.loadScroll.js"></script>
-	<!--device-->
-	<script src="../js/vendors/slick.min.js"></script>
+	<!--lazyloadxt-->
+	<script src="../js/vendors/jquery.lazyloadxt.js"></script>
 	<!--init-->
 	<script src="../js/jquery.init.js"></script>
 	<!--my scripts-->

@@ -1,2 +1,2 @@
 ﻿User-agent: *
-Sitemap: http://online-francais.itsinsta.site//sitemap.xml
+Sitemap: https://online-francais.itsinsta.site//sitemap.xml

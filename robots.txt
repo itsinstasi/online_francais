@@ -1,2 +1,3 @@
 ﻿User-agent: *
 Sitemap: https://online-francais.itsinsta.site//sitemap.xml
+Disallow: /main.html

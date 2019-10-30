@@ -62,7 +62,8 @@
 	height: 30px;
 	font-weight: 600;
 	font-size: 14px;
-	width: 120px;
+	min-width: 120px;
+	padding: 0 20px;
 }
 .main-sec__contacts-wrap{
 	border-radius: 4px;

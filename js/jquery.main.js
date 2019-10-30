@@ -120,4 +120,11 @@ $(document).ready(function(){
 	$('.js-accordion-btn').on('click', function(){
 		$(this).toggleClass('open').next('.js-accordion-main').slideToggle(250);
 	});
+	
+	//fix links page background on mobile
+	if($(window).width()<768){
+		$(document).scroll(function() {
+			$('#js-links-page-main-bg-img').css('background-position', 'center ' + $(document).scrollTop() + 'px');
+		});
+	}
 });

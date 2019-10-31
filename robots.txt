@@ -1,4 +1,4 @@
 ﻿User-agent: *
-Sitemap: https://online-francais.itsinsta.site//sitemap.xml
+Sitemap: https://francuzskiy-online.ru//sitemap.xml
 Disallow: /main.html
 Disallow: /main

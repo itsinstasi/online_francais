@@ -86,13 +86,15 @@
 				<div class="main-sec__wrap">
 					<div class="main-sec__txt">
 						<p>&nbsp;</p>
-						<form action="#" method="get" class="search">
+						<div class="search">
 							<input type="search" class="input search__input" placeholder="Story">
-							<button class="btn search__btn" type="submit" title="Сохранить"><i class="fa fa-edit" aria-hidden="true"></i></button>
+							<button id="btn_save" class="btn search__btn" type="submit" title="Сохранить"><i class="fa fa-edit" aria-hidden="true"></i></button>
+							<p>&nbsp;</p>
+							<button id="btn_delete" class="btn search__btn" type="submit" title="Удалить"><i class="fa fa-remove" aria-hidden="true"></i></button>
 							<p>&nbsp;
 								<div id="choosen">0</div> / <div id="total">0</div>
 							</p>
-						</form>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -107,7 +109,7 @@
 								<div class="stories__slide" title="курсы а1 а2">
 									<label class="stories__slide__check">
 										<input type="checkbox" />
-										<div class="stories__slide-pic" style="background-image: url(./img/og/shortwaytopay-kursy-a1-a2.png);"></div>
+										<div class="stories__slide-pic" style="background-image: url(https://scontent-arn2-2.cdninstagram.com/vp/9f7b2d340595953d08fa459717699514/5E455F86/t51.2885-15/e35/s1080x1080/70964995_417848648918640_2013410057940149406_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=100);"></div>
 										<div class="stories__slide-txt">курсы а1 а2</div>
 									</label>
 								</div>
@@ -116,7 +118,7 @@
 								<div class="stories__slide" title="обо мне">
 									<label class="stories__slide__check">
 										<input type="checkbox" />
-										<div class="stories__slide-pic" style="background-image: url(./img/og/shortwaytopay-obo-mne.png);"></div>
+										<div class="stories__slide-pic" style="background-image: url(https://scontent-arn2-2.cdninstagram.com/vp/fd9e82f10000de88f2c8123eb3847bc6/5E5246EF/t51.2885-15/e35/s1080x1080/74673923_2420823301348932_3821611190282245182_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=100);"></div>
 										<div class="stories__slide-txt">обо мне</div>
 									</label>
 								</div>
@@ -125,7 +127,7 @@
 								<div class="stories__slide" title="скайп">
 									<label class="stories__slide__check">
 										<input type="checkbox" />
-										<div class="stories__slide-pic" style="background-image: url(./img/og/shortwaytopay-skayp.png);"></div>
+										<div class="stories__slide-pic" style="background-image: url(https://scontent-arn2-2.cdninstagram.com/vp/59333443ee3474bf3042258d07499572/5E56C020/t51.2885-15/e35/s1080x1080/64638781_124803845428390_3510094304135221064_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=110);"></div>
 										<div class="stories__slide-txt">скайп</div>
 									</label>
 								</div>
@@ -134,7 +136,7 @@
 								<div class="stories__slide" title="по сериалу">
 									<label class="stories__slide__check">
 										<input type="checkbox" />
-										<div class="stories__slide-pic" style="background-image: url(./img/og/shortwaytopay-po-serialu.png);"></div>
+										<div class="stories__slide-pic" style="background-image: url(https://scontent-arn2-2.cdninstagram.com/vp/0a00c8ba33de9fb562662a9c25288cf9/5E5847A1/t51.2885-15/e35/62352490_2351395705075902_539484111279686882_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=106);"></div>
 										<div class="stories__slide-txt">по сериалу</div>
 									</label>
 								</div>
@@ -143,7 +145,7 @@
 								<div class="stories__slide" title="французский для жизни">
 									<label class="stories__slide__check">
 										<input type="checkbox" />
-										<div class="stories__slide-pic" style="background-image: url(./img/og/shortwaytopay-frantsuzskiy-dlya-zhizni.png);"></div>
+										<div class="stories__slide-pic" style="background-image: url(https://scontent-arn2-2.cdninstagram.com/vp/9908c2acf3799f737e9dc5770a0525b9/5E521FE0/t51.2885-15/e35/s1080x1080/61109610_461020321126787_1463419165388733546_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=111);"></div>
 										<div class="stories__slide-txt">французский для жизни</div>
 									</label>
 								</div>
@@ -152,7 +154,7 @@
 								<div class="stories__slide" title="интенсив">
 									<label class="stories__slide__check">
 										<input type="checkbox" />
-										<div class="stories__slide-pic" style="background-image: url(./img/og/shortwaytopay-intensiv.png);"></div>
+										<div class="stories__slide-pic" style="background-image: url(https://scontent-arn2-2.cdninstagram.com/vp/1d9743cf544b52f3f0d89d9fccc47a40/5E453E11/t51.2885-15/e35/61711952_446346209517520_4152190942785074139_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=104);"></div>
 										<div class="stories__slide-txt">интенсив</div>
 									</label>
 								</div>
@@ -272,7 +274,7 @@
 						<label class="items-item__wrap items-item__check">
 							<input id="frantsuzskiy-razgovornyy" type="checkbox" />
 							<div class="items-item__pic">
-								<img class="js-now-lazy" src="https://scontent-arn2-2.cdninstagram.com/vp/c6adc450357f05f5efe075c799a89398/5DC0E315/t51.2885-15/e35/71538839_134282211218476_2370267405049910942_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=104" alt="">
+								<img class="js-now-lazy" src="https://scontent-arn2-2.cdninstagram.com/vp/aa6d74b80f39d9e13713c70b093aefc5/5DC38615/t51.2885-15/e35/71538839_134282211218476_2370267405049910942_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=104" alt="">
 								<ul class="items-item__taglist">
 								</ul>
 							</div>
@@ -372,7 +374,7 @@
 						<label class="items-item__wrap items-item__check">
 							<input id="pravila-chtenie" type="checkbox" />
 							<div class="items-item__pic">
-								<img class="js-now-lazy" src="https://scontent-arn2-2.cdninstagram.com/vp/cb4945dc052ccb99343bd2567098e106/5DC0638E/t51.2885-15/e35/64816764_101172284529743_1260214393518894373_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=111" alt="">
+								<img class="js-now-lazy" src="https://scontent-arn2-2.cdninstagram.com/vp/4b9e60b81590b46606c05cab17003bb7/5DC3068E/t51.2885-15/e35/64816764_101172284529743_1260214393518894373_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=111" alt="">
 								<ul class="items-item__taglist">
 								</ul>
 							</div>
@@ -592,7 +594,7 @@
 						<label class="items-item__wrap items-item__check">
 							<input id="predlog-à-oboznachaet-raznoobraznye" type="checkbox" />
 							<div class="items-item__pic">
-								<img class="js-now-lazy" src="https://scontent-arn2-2.cdninstagram.com/vp/331caa19b21de7eb624b8e72acfe2bbf/5DC069DF/t51.2885-15/e35/58737532_2169627399800988_6076253002352080394_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=100" alt="">
+								<img class="js-now-lazy" src="https://scontent-arn2-2.cdninstagram.com/vp/48397f991735ed9098b9e2d23f764ec9/5DC30CDF/t51.2885-15/e35/58737532_2169627399800988_6076253002352080394_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=100" alt="">
 								<ul class="items-item__taglist">
 								</ul>
 							</div>
@@ -632,7 +634,7 @@
 						<label class="items-item__wrap items-item__check">
 							<input id="marafon-den--4" type="checkbox" />
 							<div class="items-item__pic">
-								<img class="js-now-lazy" src="https://scontent-arn2-2.cdninstagram.com/vp/6837164157ac4add0fca76ecd9d1fa7e/5DC07C12/t51.2885-15/e35/58453635_2293281667667617_1657608829069949211_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=101" alt="">
+								<img class="js-now-lazy" src="https://scontent-arn2-2.cdninstagram.com/vp/f61158258da8681fc6061686d69e2ef3/5DC31F12/t51.2885-15/e35/58453635_2293281667667617_1657608829069949211_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=101" alt="">
 								<ul class="items-item__taglist">
 								</ul>
 							</div>
@@ -712,7 +714,7 @@
 						<label class="items-item__wrap items-item__check">
 							<input id="okazavshis--v-srede-nositeley" type="checkbox" />
 							<div class="items-item__pic">
-								<img class="js-now-lazy" src="https://scontent-arn2-2.cdninstagram.com/vp/4515201bd2ddf742e81057734614f3e5/5DC15194/t51.2885-15/e35/57045431_374950913109778_5484486914872542468_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=110" alt="">
+								<img class="js-now-lazy" src="https://scontent-arn2-2.cdninstagram.com/vp/9340a2b0e83881b52b9803c147a29445/5DC3F494/t51.2885-15/e35/57045431_374950913109778_5484486914872542468_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=110" alt="">
 								<ul class="items-item__taglist">
 								</ul>
 							</div>
@@ -732,7 +734,7 @@
 						<label class="items-item__wrap items-item__check">
 							<input id="bonjour-mes-amis" type="checkbox" />
 							<div class="items-item__pic">
-								<img class="js-now-lazy" src="https://scontent-arn2-2.cdninstagram.com/vp/2652be395d41431e2b666ac5824502cd/5DC0DBEF/t51.2885-15/e35/56910292_432576514173198_882443822418618967_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=106" alt="">
+								<img class="js-now-lazy" src="https://scontent-arn2-2.cdninstagram.com/vp/463f466ad4e9983809b81a64a430f532/5DC37EEF/t51.2885-15/e35/56910292_432576514173198_882443822418618967_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=106" alt="">
 								<ul class="items-item__taglist">
 								</ul>
 							</div>
@@ -772,7 +774,7 @@
 						<label class="items-item__wrap items-item__check">
 							<input id="bonjour-mes-chers-amis-1" type="checkbox" />
 							<div class="items-item__pic">
-								<img class="js-now-lazy" src="https://scontent-arn2-2.cdninstagram.com/vp/a8ad437c8363294fbd5becda3349b231/5DC14A18/t51.2885-15/e35/54513726_134945057565491_1553450176106957688_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=111" alt="">
+								<img class="js-now-lazy" src="https://scontent-arn2-2.cdninstagram.com/vp/f1f8cba8baae00b4514cfb8f04d2afde/5DC3ED18/t51.2885-15/e35/54513726_134945057565491_1553450176106957688_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=111" alt="">
 								<ul class="items-item__taglist">
 								</ul>
 							</div>
@@ -812,7 +814,7 @@
 						<label class="items-item__wrap items-item__check">
 							<input id="dorogie-moi-podpischikixvsem-dobroe" type="checkbox" />
 							<div class="items-item__pic">
-								<img class="js-now-lazy" src="https://scontent-arn2-2.cdninstagram.com/vp/19f9501db573f688a459684a3754ae12/5DC0DA3A/t51.2885-15/e35/55903534_391971081534156_2631131865004000602_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=100" alt="">
+								<img class="js-now-lazy" src="https://scontent-arn2-2.cdninstagram.com/vp/ff5726c1b139cf4595bd1eab92bdcc21/5DC37D3A/t51.2885-15/e35/55903534_391971081534156_2631131865004000602_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=100" alt="">
 								<ul class="items-item__taglist">
 								</ul>
 							</div>
@@ -852,7 +854,7 @@
 						<label class="items-item__wrap items-item__check">
 							<input id="frantsuzy-ochen--lyubyat" type="checkbox" />
 							<div class="items-item__pic">
-								<img class="js-now-lazy" src="https://scontent-arn2-2.cdninstagram.com/vp/5e4dac74fe6ec1076fad44724774adbc/5DC08198/t51.2885-15/e35/54732446_397447524370168_973765627304057113_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=104" alt="">
+								<img class="js-now-lazy" src="https://scontent-arn2-2.cdninstagram.com/vp/8f7da0344572fe700aba3ebc215364d1/5DC32498/t51.2885-15/e35/54732446_397447524370168_973765627304057113_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=104" alt="">
 								<ul class="items-item__taglist">
 								</ul>
 							</div>
@@ -912,7 +914,7 @@
 						<label class="items-item__wrap items-item__check">
 							<input id="lichnye-mestoimeniya-imeyut" type="checkbox" />
 							<div class="items-item__pic">
-								<img class="js-now-lazy" src="https://scontent-arn2-2.cdninstagram.com/vp/0ada9ecd28ebafe993dbfca779586e2a/5DC04DA1/t51.2885-15/e15/53468228_432087380930847_1000595029852477317_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=103" alt="">
+								<img class="js-now-lazy" src="https://scontent-arn2-2.cdninstagram.com/vp/4f9701ada31fc7404379961ee2cc7a56/5DC2F0A1/t51.2885-15/e15/53468228_432087380930847_1000595029852477317_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=103" alt="">
 								<ul class="items-item__taglist">
 								</ul>
 							</div>
@@ -952,7 +954,7 @@
 						<label class="items-item__wrap items-item__check">
 							<input id="vonjour-à-tous-1" type="checkbox" />
 							<div class="items-item__pic">
-								<img class="js-now-lazy" src="https://scontent-arn2-2.cdninstagram.com/vp/78fbb886ab4c0ac258636c7648bbd056/5DC13D69/t51.2885-15/e15/54277526_971211033082344_7035234000883163249_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=100" alt="">
+								<img class="js-now-lazy" src="https://scontent-arn2-2.cdninstagram.com/vp/deee244eab66b0cb7b69e1fd9a89c9b2/5DC3E069/t51.2885-15/e15/54277526_971211033082344_7035234000883163249_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=100" alt="">
 								<ul class="items-item__taglist">
 								</ul>
 							</div>
@@ -1002,7 +1004,7 @@
 						<label class="items-item__wrap items-item__check">
 							<input id="bonjour-á-tous" type="checkbox" />
 							<div class="items-item__pic">
-								<img class="js-now-lazy" src="https://scontent-arn2-2.cdninstagram.com/vp/ae9bf4c5085344ee53b46f0744214d68/5DC14014/t51.2885-15/e15/53246945_329536637905162_5845305689526224584_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=110" alt="">
+								<img class="js-now-lazy" src="https://scontent-arn2-2.cdninstagram.com/vp/930219b548143dceacc7a87a9cd6aa1c/5DC3E314/t51.2885-15/e15/53246945_329536637905162_5845305689526224584_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=110" alt="">
 								<ul class="items-item__taglist">
 								</ul>
 							</div>
@@ -1107,49 +1109,107 @@
 	<script type="text/javascript">
 var currentTitle = '';
 var tags = {
+	"курсы а1 а2": [
+	"onlayn-kursy-a1xa2",
+],
+	"обо мне": [
+	"obo-mne",
+],
+	"скайп": [
+	"skayp-obuchenie-frantsuzskomu",
+],
+	"по сериалу": [
+	"kurs-frantsuzskogo-po-serialu",
+],
+	"французский для жизни": [
+	"kurs-po-skaypx-frantsuzskiy-dlya-zhizni",
+],
+	"интенсив": [
+	"kurs-xintensiv",
+],
 };
+
+function cleanupItems() {
+	$(".items-item").each(function() {
+		$(this).find("input").prop("checked", false);
+	});
+}
+
+function refreshStories() {
+	$(".stories__slide").each(function() {
+		var checkbox = $(this).find("input");
+
+		if ($(this).prop("title") != currentTitle) {
+			checkbox.prop("checked", false);
+		} else if (!$(this).is(':checked')) {
+			checkbox.prop("checked", true);
+		}
+	});
+}
+
+function refreshChoosen() {
+	if (currentTitle == ''  || tags[currentTitle] == null) {
+		$("#choosen").text(0);
+	} else {
+		$("#choosen").text(tags[currentTitle].length);
+	}
+}
+
+var storyClick = function () {
+	var title = $(this).closest(".stories__slide").prop("title");
+	if ($(this).is(':checked')) {
+		currentTitle = title;
+
+		refreshStories();
+
+		// Set all choosen blocks.
+		if (tags[currentTitle] != null) {
+			$(".items-item").each(function() {
+				var checkbox = $(this).find("input");
+				checkbox.prop("checked", $.inArray(checkbox.prop("id"), tags[currentTitle]) !== -1);
+			});
+		} else {
+			cleanupStories();
+		}
+	} else {
+		currentTitle = '';
+
+		cleanupItems();
+	}
+	$(".search__input").val(currentTitle);
+	refreshChoosen();
+}
+
+function setStoryBackground() {
+	$(".stories__slide").each(function() {
+		if ($(this).prop("title") == currentTitle) {
+			var divPic = $(this).find('.stories__slide-pic');
+
+			var img = getStoryBackground();
+			divPic.css("background-image", "url(" + img + ")");
+		}
+	});
+}
+
+function getStoryBackground() {
+	if (currentTitle == null) {
+		return null;
+	}
+
+	var tag = tags[currentTitle][0];
+
+	var item = $(".items-item").filter(function() {
+		return $(this).find("input").prop("id") == tag;
+	}).first();
+
+	return item.find("img").prop('src');
+}
 
 $(document).ready(function() {
 	$("#total").text($(".items-item").length);
 
     $(".stories__slide").each(function() {
-		$(this).find("input").click(function() {
-			var title = $(this).closest(".stories__slide").prop("title");
-
-			if ($(this).is(':checked')) {
-				currentTitle = title;
-
-				// Only one story in choosen
-				$(".stories__slide").each(function() {
-					if ($(this).prop("title") != currentTitle) {
-						$(this).find("input").prop("checked", false);
-					}
-				});
-
-				// Set all choosen blocks.
-				if (tags[currentTitle] != null) {
-					$(".items-item").each(function() {
-						var checkbox = $(this).find("input");
-						checkbox.prop("checked", $.inArray(checkbox.prop("id"), tags[currentTitle]) !== -1);
-					});
-					$("#choosen").text(tags[currentTitle].length);
-				} else {
-					$(".items-item").each(function() {
-						$(this).find("input").prop("checked", false);
-					});
-					$("#choosen").text(0);
-				}
-			} else {
-				currentTitle = "";
-
-				// Clear all choosen blocks.
-				$(".items-item").each(function() {
-					$(this).find("input").prop("checked", false);
-				});
-				$("#choosen").text(0);
-			}
-			$(".search__input").val(currentTitle);
-		});
+		$(this).find("input").click(storyClick);
 	});
 
     $(".items-item").each(function() {
@@ -1167,21 +1227,24 @@ $(document).ready(function() {
 					tags[currentTitle] = $(tags[currentTitle]).not([ id ]).get();
 				}
 
+				if (tags[currentTitle].length == 1) {
+					setStoryBackground();
+				}
+
 				$("#choosen").text(tags[currentTitle].length);
 			} else {
 				$(this).prop("checked", false);
 			}
 		});
-
 	});
 
-	$(".search__btn").click(function() {
+	$("#btn_save").click(function(){
 		var newTitle = $(".search__input").val();
 
 		if (currentTitle != '' && newTitle != '') {
 			tags[newTitle] = tags[currentTitle];
 
-			var story = $(".stories__slide").filter(function() {
+			var story = $(".stories__slide").filter(function(){
 				return $(this).prop("title") == currentTitle;
 			}).first();
 			story.prop("title", newTitle);
@@ -1190,20 +1253,26 @@ $(document).ready(function() {
 
 			currentTitle = newTitle;
 		} else if (currentTitle != '' && newTitle == '') {
-			tags[newTitle] = [];
+			tags[currentTitle] = [];
 
 			var story = $(".stories__slide").filter(function() {
 				return $(this).prop("title") == currentTitle;
 			}).first();
 			
 			story.remove();
+
+			currentTitle = '';
+			cleanupItems();
+
 		} else if (currentTitle == '' && newTitle != '') {
 			var stories = $(".stories__slide").filter(function() {
 				return $(this).prop("title") == newTitle;
 			});
 
 			if (stories.length == 0) {
-				$(".swiper-wrapper").append(`
+				currentTitle = newTitle;
+
+				$(".swiper-wrapper").prepend(`
 							<div class="swiper-slide">
 								<div class="stories__slide" title="` + newTitle + `">
 									<label class="stories__slide__check">
@@ -1214,8 +1283,32 @@ $(document).ready(function() {
 								</div>
 							</div>
 `);
+				var added = $(".swiper-slide").first();
+				added.width(added.height());
+				added.find("input").click(storyClick);
+
+				refreshStories();
 			}
 		}
+	});
+
+	$("#btn_delete").click(function(){
+		if (currentTitle == '') {
+			return;
+		}
+
+		tags[currentTitle] = [];
+
+		var story = $(".stories__slide").filter(function() {
+			return $(this).prop("title") == currentTitle;
+		}).first();
+			
+		story.remove();
+
+		currentTitle = '';
+		cleanupItems();
+
+		$(".search__input").val('');
 	});
 });
 	</script>

@@ -188,7 +188,11 @@ gtag('config', 'UA-93061353-3');
 					</div>
 
 					<div class="links-page-list">
+
+
 						<div class="links-page-title">Сделай шаг навстречу французскому языку, и ты никогда об этом не пожалеешь!<br/>„Невозможно - это не по - французски”<br/>Так пусть изучение этого прекрасного языка станет для тебя возможным!</div>
+
+
 
 
 
@@ -207,6 +211,8 @@ gtag('config', 'UA-93061353-3');
 								</div>
 							</div>
 						</div>
+
+
 
 
 
@@ -243,6 +249,8 @@ gtag('config', 'UA-93061353-3');
 								</div>
 							</div>
 						</div>
+
+
 
 
 
@@ -284,6 +292,8 @@ gtag('config', 'UA-93061353-3');
 
 
 
+
+
 						<div class="links-page-blc">
 							<div class="links-page-blc__txt">
 								<div class="links-page-blc__accordion-btn js-accordion-btn">КУРС „ИНТЕНСИВ”</div>
@@ -299,6 +309,8 @@ gtag('config', 'UA-93061353-3');
 								</div>
 							</div>
 						</div>
+
+
 
 
 
@@ -319,6 +331,8 @@ gtag('config', 'UA-93061353-3');
 
 
 
+
+
 						<div class="links-page-blc">
 							<div class="links-page-blc__txt">
 								<div class="links-page-blc__accordion-btn js-accordion-btn">ИНДИВИДУАЛЬНЫЕ УРОКИ ПО СКАЙП</div>
@@ -331,6 +345,8 @@ gtag('config', 'UA-93061353-3');
 								</div>
 							</div>
 						</div>
+
+
 
 
 
@@ -369,5 +385,44 @@ gtag('config', 'UA-93061353-3');
 	<script src="js/jquery.init.js"></script>
 	<!--my scripts-->
 	<script src="js/jquery.main.js"></script>
+
+    <script type="text/javascript">
+function getFormData($form){
+    var unindexed_array = $form.serializeArray();
+    var indexed_array = {};
+
+    $.map(unindexed_array, function(n, i){
+        indexed_array[n['name']] = n['value'];
+    });
+
+    return indexed_array;
+}
+
+$(document).ready(function(){
+    $('form').submit(function(){
+	event.preventDefault(); //prevent default action 
+
+	var contact = $(this).find('input[name="contact"]').val();
+	if (!contact) return false;
+
+	var post_url = $(this).attr("action"); //get form action url
+	var request_method = $(this).attr("method"); //get form GET/POST method
+	var form_data = JSON.stringify(getFormData($(this)));
+
+	var form = $(this);
+	$.ajax({
+		url : post_url,
+		type: request_method,
+                contentType: 'application/json',
+		data : form_data
+	}).done(function(response){
+	}).fail(function(){
+	});
+
+        return false;
+    });
+});
+    </script>
+
 </body>
 </html>

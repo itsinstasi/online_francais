@@ -197,7 +197,8 @@ gtag('config', 'UA-93061353-3');
 
 
 
-						<div class="links-page-blc">
+						<div class="links-page-blc" style="
+">
 							<div class="links-page-blc__txt">
 								<div class="links-page-blc__accordion-btn js-accordion-btn">КУРС ПО СКАЙП„ ФРАНЦУЗСКИЙ ДЛЯ ЖИЗНИ“</div>
 								<div class="links-page-blc__accordion-main js-accordion-main">
@@ -216,7 +217,8 @@ gtag('config', 'UA-93061353-3');
 
 
 
-						<div class="links-page-blc">
+						<div class="links-page-blc" style="
+">
 							<div class="links-page-blc__txt">
 								<div class="links-page-blc__accordion-btn js-accordion-btn">ОНЛАЙН-КУРС А1</div>
 								<div class="links-page-blc__accordion-main js-accordion-main">
@@ -254,7 +256,8 @@ gtag('config', 'UA-93061353-3');
 
 
 
-						<div class="links-page-blc">
+						<div class="links-page-blc" style="
+">
 							<div class="links-page-blc__txt">
 								<div class="links-page-blc__accordion-btn js-accordion-btn">ОНЛАЙН-КУРС А2</div>
 								<div class="links-page-blc__accordion-main js-accordion-main">
@@ -294,7 +297,8 @@ gtag('config', 'UA-93061353-3');
 
 
 
-						<div class="links-page-blc">
+						<div class="links-page-blc" style="
+">
 							<div class="links-page-blc__txt">
 								<div class="links-page-blc__accordion-btn js-accordion-btn">КУРС „ИНТЕНСИВ”</div>
 								<div class="links-page-blc__accordion-main js-accordion-main">
@@ -314,7 +318,8 @@ gtag('config', 'UA-93061353-3');
 
 
 
-						<div class="links-page-blc">
+						<div class="links-page-blc" style="
+">
 							<div class="links-page-blc__txt">
 								<div class="links-page-blc__accordion-btn js-accordion-btn">КУРС ФРАНЦУЗСКОГО ПО СЕРИАЛУ</div>
 								<div class="links-page-blc__accordion-main js-accordion-main">
@@ -333,7 +338,8 @@ gtag('config', 'UA-93061353-3');
 
 
 
-						<div class="links-page-blc">
+						<div class="links-page-blc" style="
+">
 							<div class="links-page-blc__txt">
 								<div class="links-page-blc__accordion-btn js-accordion-btn">ИНДИВИДУАЛЬНЫЕ УРОКИ ПО СКАЙП</div>
 								<div class="links-page-blc__accordion-main js-accordion-main">
@@ -416,6 +422,17 @@ $(document).ready(function(){
                 contentType: 'application/json',
 		data : form_data
 	}).done(function(response){
+	    var email = response.email;
+		if (email) {
+	        $("#leadSent").text("Ваш запрос отправлен на " + email);
+		} else {
+	        $("#leadSent").text("Ваш запрос отправлен");
+		}
+
+		var input = form.find('input');
+		input.attr('readonly', true);
+        input.attr("disabled", true);
+		form.find('button').attr("disabled", true);
 	}).fail(function(){
 	});
 

@@ -86,13 +86,13 @@ gtag('config', 'UA-93061353-3');
 				<div class="header__wrap">
 					<div class="header__left">
 						<a href="./" class="header__logo">
-							<div class="header__logo-pic"><img src="https://scontent-arn2-2.cdninstagram.com/v/t51.2885-19/s150x150/80700635_603815137085115_6708886903745150976_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_ohc=5frSA0c_f-4AX8fT2ol&oh=3781910e9c609cd5bda2f7ed251a3693&oe=5ED80084" alt="ФРАНЦУЗСКИЙ ОНЛАЙН ОБУЧЕНИЕ"></div>
+							<div class="header__logo-pic"><img src="https://scontent-arn2-2.cdninstagram.com/v/t51.2885-19/s150x150/80700635_603815137085115_6708886903745150976_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_ohc=h7EWml9vCFgAX9VGpDu&oh=2daec0c05afbd4306da1eac8aa01d318&oe=5ED80084" alt="ФРАНЦУЗСКИЙ ОНЛАЙН ОБУЧЕНИЕ"></div>
 							<div class="header__logo-txt">online_francais</div>
 						</a>
 						<div class="header__title">ФРАНЦУЗСКИЙ ОНЛАЙН ОБУЧЕНИЕ</div>
 					</div>
 					<div id="settingsContainer" class="header__right" style="display:none">
-						<button onclick="window.open('http://itsinsta.site/page.html?project=online_francais');" class="btn stories-popup__buy">Настроить</button>
+						<button onclick="window.open('http://itsinsta.site/page.html?project=online_francais', '_self');" class="btn stories-popup__buy">Настроить</button>
 					</div>
 				</div>
 			</div>
@@ -424,7 +424,7 @@ var getUrlParameter = function getUrlParameter(sParam) {
 
 $(document).ready(function(){
 	var lid = getUrlParameter("lid");
-	if (lid) {
+	if (lid && lid != "true") {
         localStorage.setItem("hasToken", true);
 
 		$("#settingsContainer").show();
